@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@import "tw-animate-css";
+
+@theme {
+  --color-tactical-bg: #121212;
+  --color-tactical-panel: #1E1E1E;
+  --color-tactical-yellow: #FFCC00;
+  --color-tactical-red: #FF3B30;
+  --color-tactical-gold: #FFD700;
+  --color-tactical-gray: #8E8E93;
+}
+
+@layer base {
+  body {
+    @apply bg-tactical-bg text-white antialiased;
+  }
+}
