@@ -28,56 +28,56 @@ const TESTIMONIALS = [
     state: 'PM-SP',
     rating: 4.9,
     text: 'Achei que nunca ia passar por causa de matemática. O método direto ao ponto me salvou. Hoje patrulho as ruas de SP com orgulho.',
-    image: 'https://i.pravatar.cc/150?img=11'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDCrVDa60hvUpmgS-WLuwsefO8Mez5ziDUnjlphi3GyA&s=10'
   },
   {
     name: 'Cb. Santos',
     state: 'PM-MG',
     rating: 4.8,
     text: 'O cronograma integrado com o TAF foi o diferencial. Vi muito candidato bom rodar na barra, mas eu estava preparado.',
-    image: 'https://i.pravatar.cc/150?img=12'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI9Rl0ngHhkMvbxSk0wToIczlnlZg7Wne1ca0muxhGFw&s=10'
   },
   {
     name: 'Sd. Ferreira',
     state: 'PM-PR',
     rating: 4.9,
     text: 'Esqueça horas de videoaula. O estande de tiro com as justificativas da banca é a melhor ferramenta que já usei.',
-    image: 'https://i.pravatar.cc/150?img=13'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQv5QtKZtAfMPbzeLUDvjvqfTXlg9JTt8sw3lFJEgNOA&s=10'
   },
   {
     name: 'Sd. Costa',
     state: 'PM-RJ',
     rating: 4.7,
     text: 'Fui do zero à aprovação em 4 meses. O sistema te força a ter constância, não tem como fugir do checklist diário.',
-    image: 'https://i.pravatar.cc/150?img=14'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuXBTPYtxK_ghJDYaNPVCHNtV5tCK9K6JEcb1R0AVOQg&s=10'
   },
   {
     name: 'Sd. Lima',
     state: 'PM-SC',
     rating: 4.8,
     text: 'A comunidade é sensacional. Ver o relato de outros recrutas e tirar dúvidas na hora me manteve motivado até o fim.',
-    image: 'https://i.pravatar.cc/150?img=15'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZlZfv9YV5QZIhhxtKQlPipJO19UcBdy2NZnMda5ssZA&s=10'
   },
   {
     name: 'Sd. Almeida',
     state: 'PM-BA',
     rating: 4.9,
     text: 'O material de Direito Penal Militar é absurdo de bom. Fui pra prova sabendo exatamente o que ia cair.',
-    image: 'https://i.pravatar.cc/150?img=16'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQELKggX_GdJOEhgZffzkwXKndx1e1H23xPFK49kzicvg&s=10'
   },
   {
     name: 'Sd. Ribeiro',
     state: 'PM-GO',
     rating: 4.6,
     text: 'A plataforma é rápida, não trava e o modo noturno ajuda demais quem estuda de madrugada depois do trabalho.',
-    image: 'https://i.pravatar.cc/150?img=17'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Zp8pRCDLyqr2RAjnRZX4DirC27WWkvh5S0ZicuGjiw&s=10'
   },
   {
     name: 'Sd. Martins',
     state: 'PM-RS',
     rating: 4.9,
     text: 'Melhor investimento que fiz. O valor é ridículo perto do salário e da estabilidade que a farda me trouxe.',
-    image: 'https://i.pravatar.cc/150?img=18'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGcC8zXryYKbD5F-2HAmXuiksZhTUQGY1ZiptIIEndg&s=10'
   }
 ];
 

@@ -17,6 +17,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**', // This allows any path under the hostname
       },
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn0.gstatic.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   output: 'standalone',
