@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Target, Shield, Crosshair, BookOpen, Users, CheckCircle2, ChevronDown, ChevronRight, Activity, Zap, Star } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import { useState } from 'react';
 
 // --- MOCK DATA ---
@@ -87,6 +88,22 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-tactical-bg text-white selection:bg-tactical-yellow/30 selection:text-tactical-yellow">
       
+      {/* UTMIFY PIXEL */}
+      <Script
+        id="utmify-pixel"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.googlePixelId = "69b02cee389367212836cd1e";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel-google.js");
+            document.head.appendChild(a);
+          `
+        }}
+      />
+
       {/* HEADER / NAVBAR */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-tactical-bg/80 backdrop-blur-md border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
