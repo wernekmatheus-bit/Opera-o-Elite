@@ -23,6 +23,13 @@ export default function LoginPage() {
     try {
       const cleanEmail = email.toLowerCase().trim();
       
+      // Verifica se as variáveis do Supabase estão configuradas
+      if (!process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL === 'https://placeholder.supabase.co') {
+        setErrorMsg('ERRO DE SISTEMA: As variáveis de ambiente do Supabase não estão configuradas. Por favor, configure NEXT_PUBLIC_SUPABASE_URL e NEXT_PUBLIC_SUPABASE_ANON_KEY no painel (Secrets).');
+        setStatus('error');
+        return;
+      }
+
       // Check if email is in whitelist and paid is true
       const { data, error: fetchError } = await supabase
         .from('whitelist')
@@ -30,7 +37,20 @@ export default function LoginPage() {
         .eq('email', cleanEmail)
         .single();
 
-      if (fetchError || !data) {
+      if (fetchError) {
+        console.error('Supabase Fetch Error:', fetchError);
+        // PGRST116 é o código do Supabase para "Nenhuma linha retornada" (Not Found)
+        if (fetchError.code === 'PGRST116') {
+          setErrorMsg('E-mail não encontrado. Verifique se você digitou corretamente ou finalize sua matrícula.');
+        } else {
+          // Outros erros (ex: RLS bloqueando, erro de rede, tabela inexistente)
+          setErrorMsg(`Erro de conexão (${fetchError.code || 'Desconhecido'}). Verifique o console do navegador para detalhes.`);
+        }
+        setStatus('error');
+        return;
+      }
+
+      if (!data) {
         setErrorMsg('E-mail não encontrado. Verifique se você digitou corretamente ou finalize sua matrícula.');
         setStatus('error');
         return;
