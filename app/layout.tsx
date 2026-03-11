@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Operação Elite - Preparação Tática',
-  description: 'Plataforma de alta performance para concursos da Polícia Militar.',
+  description: 'A única plataforma premium desenvolvida por policiais da ativa para PF, PRF, PC e PM.',
 };
 
 export default function RootLayout({
